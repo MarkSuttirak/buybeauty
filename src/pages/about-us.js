@@ -12,7 +12,7 @@ function AboutUs() {
       </section>
       <section className="flex flex-wrap  flex-col sm:flex-row sm:flex-nowrap">
         <div className="w-full  sm:w-[20%]  xl:w-[38%]"></div>
-        <div className="w-full sm:w-[80%] xl:w-[62%] flex py-[30px] bg-[#E6F0EC] -mt-[125px]">
+        <div className="w-full sm:w-[80%] xl:w-[62%] flex py-[30px] bg-[#E6F0EC] sm:-mt-[125px]">
           <div className="w-[30%] sm:w-[38%]">
             <h2 className="text-[#006b3d] text-[31px] sm:text-[52px] xl:text-[64px] dDinFont text-center">
               We are
@@ -30,12 +30,12 @@ function AboutUs() {
         </div>
       </section>
 
-      <section className="mt-[125px] max-w-[1270px] mx-auto ">
+      <section className="mt-[70px] sm:mt-[125px] max-w-[1270px] mx-auto ">
         <div className="mx-7 xl:mx-0">
-        <h2 className="text-[#132573] text-[48px] font-bold text-center">
+        <h2 className="text-[#132573] text-[38px] sm:text-[48px] font-bold text-center">
           การดูแลอย่างใกล้ชิด
         </h2>
-        <img src={aboutUs} className="text-center mx-auto" alt="" />
+        <img src={aboutUs} className="text-center mx-auto mt-[40px] sm:mt-0" alt="" />
         <p className="text-[#2a3d53] text-2xl leading-[36px] text-center mt-[30px]">
           บริษัทเมดิไทม์จำกัดดำเนินกิจการมาตั้งแต่ปี 2551
           โดยให้บริการเครื่องมือแพทย์ในประเทศไทย เราคือผู้เชี่ยวชาญสินค้าทางด้าน

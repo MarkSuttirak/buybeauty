@@ -6,7 +6,7 @@ function AfterSaleService() {
   return (
     <main>
       <section>
-        <img src={AfterSaleServiceImg} alt="" />
+        <img src={AfterSaleServiceImg} className="w-full" alt="" />
       </section>
 
       <section className="max-w-[700px] mx-auto my-24 px-6">

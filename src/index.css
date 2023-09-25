@@ -44,6 +44,22 @@ body{overflow-x: hidden;}
   font-style: normal;
 }
 
+.background-overlay {
+  background-color: #00000059;
+    opacity: 0.5;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.coverCenter {
+  background-position: center !important;
+  background-size: cover !important;
+}
+
 
 .dDinFont {
   font-family: "D-DIN regular";

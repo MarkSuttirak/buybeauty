@@ -9,20 +9,22 @@ const ContactUs = () => {
     <>
       <main>
         <section
-          className="h-[300px] flex items-center coverCenter"
+          className="min-h-[50vh] relative flex items-center coverCenter"
           style={{ background: `url('${ContactUsBannerImg}')` }}
         >
+
+<div className="background-overlay"></div>
           <div className="container mx-auto max-w-[1200px] px-6">
-            <h1 className="text-white text-[64px] font-normal dDinFont tracking-[-3px]">
+            <h1 className="text-white text-[64px] font-normal dDinFont tracking-[-3px] relative">
               Contact us
             </h1>
             <a
               href="tel:%20+66(0)%202718-3582-3"
-              className="bg-[#006B3D] text-white w-[154px] h-[54px] flex justify-center items-center font-bold py-2 px-4 rounded-lg mt-5"
+              className="bg-[#006B3D] relative text-white w-[154px] h-[54px] flex justify-center items-center font-bold py-2 px-4 rounded-lg mt-5"
             >
-              <span className="">ติดต่อเรา</span>
+              <span className="relative">ติดต่อเรา</span>
             </a>
-            <p className="text-[18px] text-white mt-6  tracking-[-1px]">
+            <p className="text-[18px] relative text-white mt-6  tracking-[-1px]">
               Get in touch or create a route to the studio over here:
             </p>
           </div>
