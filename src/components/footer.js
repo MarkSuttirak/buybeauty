@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import MedtimeLogo from "../img/footerlogo.png";
 import map from "../img/map.svg";
 import phone from "../img/phone.svg";
@@ -11,7 +11,10 @@ const navigation = {
     { name: "บริการหลังการขาย", href: "/บริการหลังการขาย/" },
   ],
   aboutus: [
-    { name: "แผนที่", href: "https://www.google.co.th/maps/place/Meditime+Company+Limited/@20.8409111,-18.2301756,3z/data=!4m8!1m2!2m1!1smeditime!3m4!1s0x311d61d782ebffff:0x6cf441793064ef5f!8m2!3d13.7415551!4d100.6275837?hl=th" },
+    {
+      name: "แผนที่",
+      href: "https://www.google.co.th/maps/place/Meditime+Company+Limited/@20.8409111,-18.2301756,3z/data=!4m8!1m2!2m1!1smeditime!3m4!1s0x311d61d782ebffff:0x6cf441793064ef5f!8m2!3d13.7415551!4d100.6275837?hl=th",
+    },
     { name: "ติดต่อเรา", href: "/contact-us/" },
   ],
   social: [
@@ -99,13 +102,20 @@ export default function Footer() {
         <div className="mx-auto  max-w-7xl px-6 pb-8 pt-16 sm:pt-24 sm:pb-24 lg:px-8 lg:pt-32">
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="space-y-8">
-              <img className="w-full sm:w-[249px]" src={MedtimeLogo} alt="Company name" />
+              <Link to="/">
+                <img
+                  className="w-full sm:w-[249px]"
+                  src={MedtimeLogo}
+                  alt="Company name"
+                />
+              </Link>
               <p className="text-sm leading-6 text-gray-600 text-center sm:text-left">
-                We are a family centered practice that incorporates compassion <br />
+                We are a family centered practice that incorporates compassion{" "}
+                <br />
                 and dedication to promote your well being.
               </p>
               <button className="w-[180px] h-[54px] text-white bg-[#003190] rounded-[10px] font-bold">
-              ติดต่อเรา
+                ติดต่อเรา
               </button>
               <div className="flex space-x-6">
                 {navigation.social.map((item) => (
@@ -197,22 +207,26 @@ export default function Footer() {
               </div>
             </div>
           </div>
-
         </div>
-        
       </div>
       <div className="sm:flex xl:px-32 bg-white justify-between py-5 px-7">
-          <div className="flex justify-evenly sm:justify-start xl:justify-between sm:gap-x-[350px] xl:gap-x-0 items-center w-full xl:w-[30%]">
-            <p className="text-xs text-[#003190] font-normal ">© 2022 - Meditime</p>
-            <p className="text-xs text-[#003190] font-normal ">All rights reserved.</p>
-          </div>
-          <div className="sm:w-[70%] xl:flex justify-end gap-x-14 hidden">
-          <p className="text-xs text-[#003190] font-normal ">Sitemap</p>
-          <p className="text-xs text-[#003190] font-normal ">Terms and Conditions</p>
-            <p className="text-xs text-[#003190] font-normal ">Privacy Policy</p>
-            <p className="text-xs text-[#003190] font-normal ">Manage Cookies</p>
-          </div>
+        <div className="flex justify-evenly sm:justify-start xl:justify-between sm:gap-x-[350px] xl:gap-x-0 items-center w-full xl:w-[30%]">
+          <p className="text-xs text-[#003190] font-normal ">
+            © 2022 - Meditime
+          </p>
+          <p className="text-xs text-[#003190] font-normal ">
+            All rights reserved.
+          </p>
         </div>
+        <div className="sm:w-[70%] xl:flex justify-end gap-x-14 hidden">
+          <p className="text-xs text-[#003190] font-normal ">Sitemap</p>
+          <p className="text-xs text-[#003190] font-normal ">
+            Terms and Conditions
+          </p>
+          <p className="text-xs text-[#003190] font-normal ">Privacy Policy</p>
+          <p className="text-xs text-[#003190] font-normal ">Manage Cookies</p>
+        </div>
+      </div>
     </footer>
   );
 }

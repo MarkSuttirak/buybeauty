@@ -149,7 +149,7 @@ const Home = () => {
     return imageItems.map((item) => (
       <div
         key={item.key}
-        className="image-container w-[48%] sm:w-[32%] xl:w-1/5 h-[200px] sm:h-[240px] lg:h-[325px] leading-4 bg-no-repeat bg-cover xl:bg-contain"
+        className="image-container 2xs:w-[100%] w-[48%] sm:w-[32%] xl:w-1/5 2xs:h-[310px] xs:h-[170px] h-[200px] sm:h-[240px] lg:h-[325px] leading-4 bg-no-repeat bg-cover xl:bg-contain"
         onMouseEnter={() => handleMouseEnter(item.key)}
         onMouseLeave={handleMouseLeave}
         style={{
@@ -248,7 +248,7 @@ const Home = () => {
                 </div>
                 <Link
                   to="/about-us"
-                  class="flex items-center font-bold text-[16px] text-[#3a8717] sl:ml-4 mt-7"
+                  class="flex items-center font-bold text-[16px] text-[#3a8717] sm:ml-4 mt-7"
                 >
                   <span>ดูเพิ่มเติม</span>
                   <span class="font-bold">
