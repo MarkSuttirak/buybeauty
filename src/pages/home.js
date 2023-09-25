@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import kImaging from "../img/4kImaging.png";
 import kImagingHover from "../img/4kImagingHover.png";
 import shoulderRestortion from "../img/shoulderRestortion.png";
@@ -28,7 +29,6 @@ import customer6 from "../img/customer6.png";
 import customer7 from "../img/customer7.png";
 import customer8 from "../img/customer8.png";
 import customer9 from "../img/customer9.png";
-
 
 const upperBox = [
   {
@@ -211,7 +211,7 @@ const Home = () => {
               <div>
                 <h2 className="text-[#003190] text-[48px] font-bold">
                   เหตุผลที่เลือก
-                  <span className="text-green-600"> MediTime</span>
+                  <span className="text-[#006B3D]"> MediTime</span>
                 </h2>
 
                 <div className="mt-6">
@@ -233,6 +233,15 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
+                <Link
+                  to="/about-us"
+                  class="flex items-center font-bold text-[16px] text-[#3a8717] ml-4 mt-7"
+                >
+                  <span>ดูเพิ่มเติม</span>
+                  <span class="font-bold">
+                  <svg width="10" height="10" className="ml-2" viewBox="-5 0 25 25" xmlns="http://www.w3.org/2000/svg"><path d="m3.454.57 10.848 10.424.09.08c.363.35.576.813.608 1.364l-.002.185c-.03.49-.243.954-.664 1.354l.005-.008L3.454 24.431a2.061 2.061 0 0 1-2.845 0 1.964 1.964 0 0 1 0-2.844l9.403-9.03L.609 3.413a1.964 1.964 0 0 1 0-2.844 2.061 2.061 0 0 1 2.845 0Z" fill="#3a8717"/></svg>
+                  </span>
+                </Link>
               </div>
             </div>
           </div>
@@ -316,20 +325,56 @@ const Home = () => {
             ลูกค้าของเรา
           </h2>
           <div className="desktop-customer hidden sm:block">
-          <img src={customer} className="mx-auto mt-10" alt="" />
-          <img src={customer2} className="mx-auto mt-4" alt="" />
+            <img src={customer} className="mx-auto mt-10" alt="" />
+            <img src={customer2} className="mx-auto mt-4" alt="" />
           </div>
-          
+
           <div className="mobile-customer sm:hidden grid grid-cols-2 gap-x-5 gap-y-12 mt-10">
-            <img src={customer1} className="mx-auto w-[120px] h-[120px] object-contain" alt="" />
-            <img src={customerMobile2} className="mx-auto w-[120px] h-[120px] object-contain" alt="" />
-            <img src={customer3} className="mx-auto w-[120px] h-[120px] object-contain" alt="" />
-            <img src={customer4} className="mx-auto w-[120px] h-[120px] object-contain" alt="" />
-            <img src={customer5} className="mx-auto w-[120px] h-[120px] object-contain" alt="" />
-            <img src={customer6} className="mx-auto w-[120px] h-[120px] object-contain" alt="" />
-            <img src={customer7} className="mx-auto w-[120px] h-[120px] object-contain" alt="" />
-            <img src={customer8} className="mx-auto w-[120px] h-[120px] object-contain" alt="" />
-            <img src={customer9} className="mx-auto w-[120px] h-[120px] object-contain" alt="" />
+            <img
+              src={customer1}
+              className="mx-auto w-[120px] h-[120px] object-contain"
+              alt=""
+            />
+            <img
+              src={customerMobile2}
+              className="mx-auto w-[120px] h-[120px] object-contain"
+              alt=""
+            />
+            <img
+              src={customer3}
+              className="mx-auto w-[120px] h-[120px] object-contain"
+              alt=""
+            />
+            <img
+              src={customer4}
+              className="mx-auto w-[120px] h-[120px] object-contain"
+              alt=""
+            />
+            <img
+              src={customer5}
+              className="mx-auto w-[120px] h-[120px] object-contain"
+              alt=""
+            />
+            <img
+              src={customer6}
+              className="mx-auto w-[120px] h-[120px] object-contain"
+              alt=""
+            />
+            <img
+              src={customer7}
+              className="mx-auto w-[120px] h-[120px] object-contain"
+              alt=""
+            />
+            <img
+              src={customer8}
+              className="mx-auto w-[120px] h-[120px] object-contain"
+              alt=""
+            />
+            <img
+              src={customer9}
+              className="mx-auto w-[120px] h-[120px] object-contain"
+              alt=""
+            />
           </div>
         </section>
       </main>
