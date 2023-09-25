@@ -15,6 +15,7 @@ import MedtimeLogo from '../img/MeditimeLogo.png'
 import { Link } from 'react-router-dom'
 
 const products = [
+  { name: 'หมวดหมู่สินค้า',  href: '/new-categories' },
   { name: 'Sports Medicine',  href: 'https://www.conmed.com/en/specialties-and-techniques/specialties/orthopedics' },
   { name: 'Powered Instruments',href: 'https://www.conmed.com/en/products/surgical-power-tools' },
   { name: 'VWELL Products', href: 'https://www.vwell.care/footcare' },
@@ -73,10 +74,10 @@ export default function Header() {
                     >
                       
                       <div className="flex-auto">
-                        <a href={item.href} className="block text-[18px] font-normal text-[#333333]">
+                        <Link to={item.href} className="block text-[18px] font-normal text-[#333333]">
                           {item.name}
                           
-                        </a>
+                        </Link>
                       
                       </div>
                     </div>
@@ -145,18 +146,18 @@ export default function Header() {
                     </>
                   )}
                 </Disclosure>
-                <a
-                  href="#"
+                <Link
+                  to="/บริการหลังการขาย"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   บริการหลังการขาย
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                  to="/about-us"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                  เกี่ยวกับ MediTime
-                </a>
+                </Link>
                 
               </div>
              
