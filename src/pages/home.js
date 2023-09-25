@@ -207,7 +207,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full mt-5 xl:mt-0 xl:w-[65%] pt-[5%] xl:pt-[11%] pr-[5%] xl:pr-[5%] pb-[5%] xl:pb-[10%] pl-[5%] xl:pl-[15%] bg-[#E6F0EC]">
+            <div className="w-full mt-5 xl:mt-0 xl:w-[65%] pt-[10%] xl:pt-[11%] pr-[5%] xl:pr-[5%] pb-[10%] xl:pb-[10%] pl-[5%] xl:pl-[15%] bg-[#E6F0EC] rounded-[9px] xl:rounded-[0px]">
               <div>
                 <h2 className="text-[#003190] text-[48px] font-bold">
                   เหตุผลที่เลือก
@@ -235,7 +235,7 @@ const Home = () => {
                 </div>
                 <Link
                   to="/about-us"
-                  class="flex items-center font-bold text-[16px] text-[#3a8717] ml-4 mt-7"
+                  class="flex items-center font-bold text-[16px] text-[#3a8717] sl:ml-4 mt-7"
                 >
                   <span>ดูเพิ่มเติม</span>
                   <span class="font-bold">
@@ -262,45 +262,44 @@ const Home = () => {
                 {posts.map((post) => (
                   <div
                     key={post.title}
-                    className="flex flex-col overflow-hidden rounded-lg"
+                    className="flex flex-col overflow-hidden rounded-lg "
                   >
-                    <div className=" h-[270px]">
+                    <div className=" h-[270px] relative">
                       <img
                         className="h-full w-full object-cover rounded-[10px]"
                         src={post.imageUrl}
                         alt=""
                       />
+                      <p className="bg-[#0A89F2] rounded-[8px] absolute right-0 top-0 text-white px-[18px] py-[6px]">{post.date}</p>
                     </div>
                     <div className="flex flex-1 flex-col justify-between mt-5">
                       <div className="flex-1">
                         <p className="text-[18px] font-medium text-[#2a3d53]">
-                          <a
+                          <Link
                             href={post.category.href}
                             className="hover:underline"
                           >
                             {post.category.name}
-                          </a>
+                          </Link>
                         </p>
-                        <a href={post.href} className="mt-2 block">
+                        <Link href={post.href} className="mt-2 block">
                           <p className="mt-3 text-[18px] font-medium text-black">
                             {post.description}
                           </p>
-                        </a>
+                        </Link>
 
-                        <a
+                        <Link
                           href={post.href}
                           className="flex items-center font-bold text-[16px] text-[#3A8717] mt-3"
                         >
                           <span>อ่านต่อ</span>
 
                           <span className="font-bold">
-                            <img
-                              src={rightIcon}
-                              alt=""
-                              className="w-[10px] ml-1"
-                            />
+                          <span class="font-bold">
+                  <svg width="10" height="10" className="ml-2" viewBox="-5 0 25 25" xmlns="http://www.w3.org/2000/svg"><path d="m3.454.57 10.848 10.424.09.08c.363.35.576.813.608 1.364l-.002.185c-.03.49-.243.954-.664 1.354l.005-.008L3.454 24.431a2.061 2.061 0 0 1-2.845 0 1.964 1.964 0 0 1 0-2.844l9.403-9.03L.609 3.413a1.964 1.964 0 0 1 0-2.844 2.061 2.061 0 0 1 2.845 0Z" fill="#3a8717"/></svg>
+                  </span>
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -314,7 +313,7 @@ const Home = () => {
           <h2 className="text-[#003190] text-[48px] font-bold text-center">
             พาร์ทเนอร์ของเรา
           </h2>
-          <div className="flex gap-x-20 gap-y-10 justify-center flex-wrap gap mt-20">
+          <div className="flex gap-x-20 gap-y-10 justify-center flex-wrap gap mt-20 mx-4">
             <img src={Partners1} className=" " alt="" />
             <img src={Partners2} className="" alt="" />
           </div>

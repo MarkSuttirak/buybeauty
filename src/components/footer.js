@@ -120,7 +120,7 @@ export default function Footer() {
                 ))}
               </div>
             </div>
-            <div className="mt-16 grid xl:grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+            <div className="mt-16 grid sm:grid-cols-2 gap-8 sm:gap-0 xl:gap-8 xl:col-span-2 xl:mt-0">
               <div className="md:grid xl:grid-cols-2 md:gap-8">
                 <div>
                   <h3 className="text-xl font-bold leading-9 text-[#2a3d53]">
@@ -162,12 +162,12 @@ export default function Footer() {
                   {/* <h3 className="text-sm font-semibold leading-6 text-gray-900">
                     Company
                   </h3> */}
-                  <div className="bg-[#FFFFFF] rounded-2xl px-5 py-5">
+                  <div className="bg-[#FFFFFF] rounded-2xl xl:px-8 px-5 py-5 xl:py-8">
                     <h2 class="text-[20px] text-[#2a3d53] leading-7 font-bold">
                       ติดต่อเรา
                     </h2>
 
-                    <div className="mx-auto max-w-7xl py-6 sm:px-2 sm:py-6 lg:px-0">
+                    <div className="mx-auto max-w-7xl py-6 sm:px-2 sm:py-6 sm:pb-0 lg:px-0">
                       <div className="mx-auto grid gap-y-4 lg:max-w-none lg:grid-cols-1 lg:gap-y-4">
                         {perks.map((perk) => (
                           <div key={perk.name} className="sm:flex">

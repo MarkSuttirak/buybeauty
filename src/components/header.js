@@ -50,7 +50,7 @@ export default function Header() {
         </div>
         <Popover.Group className="hidden lg:flex h-full lg:gap-x-12">
           <Popover className="relative h-full flex justify-center items-center px-3 hover:bg-[#006B3D] hover:text-white">
-            <Popover.Button className="flex items-center gap-x-1 text-[18px] font-bold leading-6 text-[#2a3d53] uppercase h-full hover:text-white">
+            <Popover.Button className="flex items-center gap-x-1 text-[18px] font-bold leading-6 text-[#2a3d53] uppercase h-full hover:text-white no-underline focus:outline-none">
             สินค้าทั้งหมด
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </Popover.Button>
