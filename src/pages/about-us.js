@@ -8,7 +8,7 @@ function AboutUs() {
   return (
     <main>
       <section>
-        <img src={aboutUsBanner} alt="" />
+        <img src={aboutUsBanner} className="w-full" alt="" />
       </section>
       <section className="flex flex-wrap  flex-col sm:flex-row sm:flex-nowrap">
         <div className="w-full  sm:w-[20%]  xl:w-[38%]"></div>
