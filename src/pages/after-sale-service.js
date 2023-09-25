@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import AfterSaleServiceImg from "../img/AfterSaleService.png";
 import barcode from "../img/barcode.png";
 
 function AfterSaleService() {
+  // Define your desired page title
+  const pageTitle = "บริการหลังการขาย ";
+
+  // Set the page title using useEffect
+  useEffect(() => {
+    document.title = pageTitle + " - " + " meditimethailand";
+  }, []);
   return (
     <main>
       <section>
@@ -20,7 +27,9 @@ function AfterSaleService() {
           <li className="text-[#2a3d53] text-[17px] sm:text-2xl">
             การดูแลและบำรุงรักษาเครื่องมือแพทย์ Preventive maintenance
           </li>
-          <li className="text-[#2a3d53] text-[17px] sm:text-2xl">ตรวจสภาพเครื่องมือแพทย์</li>
+          <li className="text-[#2a3d53] text-[17px] sm:text-2xl">
+            ตรวจสภาพเครื่องมือแพทย์
+          </li>
           <li className="text-[#2a3d53] text-[17px] sm:text-2xl">
             อบรมให้ความรู้การดูแลและซ่อมแซมเบื้องต้นกับเจ้าหน้าที่ผู้เกี่ยวข้อง
           </li>
@@ -29,7 +38,9 @@ function AfterSaleService() {
           การซ่อมสินค้า
         </p>
         <ul className="list-disc list-inside space-y-2">
-          <li className="text-[#2a3d53] text-[17px] sm:text-2xl">ซ่อมในประเทศ</li>
+          <li className="text-[#2a3d53] text-[17px] sm:text-2xl">
+            ซ่อมในประเทศ
+          </li>
           <li className="text-[#2a3d53] text-[17px] sm:text-2xl">การติดต่อ</li>
         </ul>
         <p className="text-[#2a3d53] text-2xl font-bold mb-[1.5em] mt-8">
@@ -102,27 +113,28 @@ function AfterSaleService() {
                   </button>
                 </div>
               </div>
-              
             </div>
           </form>
           <div className="mt-14">
-                <h2 className="text-[#132573] text-[21px] sm:text-[43px] xl:text-[48px] font-bold ">
-                  ช่องทางการติดต่อฝ่ายบริการลูกค้า
-                </h2>
-                <ul className="list-disc list-inside space-y-2 mt-8">
-                  <li className="text-[#2a3d53] text-[17px] sm:text-2xl">
-                    ผู้แทนขายประจำพื้นที่ของท่าน
-                  </li>
-                  <li className="text-[#2a3d53] text-[17px] sm:text-2xl">โทร 02-718-3582-3</li>
-                  <li className="text-[#2a3d53] text-[17px] sm:text-2xl">
-                    Email : Center@meditime.co.th
-                  </li>
-                  <li className="text-[#2a3d53] text-[17px] sm:text-2xl">
-                    Line OA : Meditime service
-                  </li>
-                </ul>
-                <img src={barcode} className="ml-5" alt="" />
-              </div>
+            <h2 className="text-[#132573] text-[21px] sm:text-[43px] xl:text-[48px] font-bold ">
+              ช่องทางการติดต่อฝ่ายบริการลูกค้า
+            </h2>
+            <ul className="list-disc list-inside space-y-2 mt-8">
+              <li className="text-[#2a3d53] text-[17px] sm:text-2xl">
+                ผู้แทนขายประจำพื้นที่ของท่าน
+              </li>
+              <li className="text-[#2a3d53] text-[17px] sm:text-2xl">
+                โทร 02-718-3582-3
+              </li>
+              <li className="text-[#2a3d53] text-[17px] sm:text-2xl">
+                Email : Center@meditime.co.th
+              </li>
+              <li className="text-[#2a3d53] text-[17px] sm:text-2xl">
+                Line OA : Meditime service
+              </li>
+            </ul>
+            <img src={barcode} className="ml-5" alt="" />
+          </div>
         </div>
       </section>
     </main>

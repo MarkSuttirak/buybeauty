@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ContactUsBannerImg from "../img/ContactUsBannerImg.png";
 import phoneWhite from "../img/phoneWhite.svg";
 import mapWhite from "../img/mapWhite.svg";
 import Shapes from "../img/Shapes.png";
 
 const ContactUs = () => {
+   // Define your desired page title
+   const pageTitle = "Contact Us ";
+
+   // Set the page title using useEffect
+   useEffect(() => {
+     document.title = pageTitle + " - " + " meditimethailand";
+   }, []);
   return (
     <>
       <main>
@@ -12,8 +19,7 @@ const ContactUs = () => {
           className="min-h-[50vh] relative flex items-center coverCenter"
           style={{ background: `url('${ContactUsBannerImg}')` }}
         >
-
-<div className="background-overlay"></div>
+          <div className="background-overlay"></div>
           <div className="container mx-auto max-w-[1200px] px-6">
             <h1 className="text-white text-[64px] font-normal dDinFont tracking-[-3px] relative">
               Contact us
@@ -77,11 +83,22 @@ const ContactUs = () => {
 
         <section className="relative my-[130px] px-7 ">
           <div className="max-w-[1382px] flex mx-auto flex-wrap xl:flex-nowrap">
-            <div className="w-full  xl:w-1/2 xl:ml-[200px] gap-y-4 flex flex-col"> 
-                <img src={Shapes} className="w-[38px]" alt="" />
-                <p className="text-[#0D1317] text-[64px] leading-[68px] tracking-[-3px] dDinFont">Get in touch<br /> with us</p>
-                <p className="text-[#0d1317] text-[20px] leading-[30px]">Meditime Company Limited<br />999/99 Rama9 road, <br />Suanluang, Bangkok 10250</p>
-                <p className="text-[#0d1317] text-[20px] leading-[30px]"><strong>Tel</strong> : 02-718-3582-3 <br /><strong>Fax</strong> : 02-718-3584</p>
+            <div className="w-full  xl:w-1/2 xl:ml-[200px] gap-y-4 flex flex-col">
+              <img src={Shapes} className="w-[38px]" alt="" />
+              <p className="text-[#0D1317] text-[64px] leading-[68px] tracking-[-3px] dDinFont">
+                Get in touch
+                <br /> with us
+              </p>
+              <p className="text-[#0d1317] text-[20px] leading-[30px]">
+                Meditime Company Limited
+                <br />
+                999/99 Rama9 road, <br />
+                Suanluang, Bangkok 10250
+              </p>
+              <p className="text-[#0d1317] text-[20px] leading-[30px]">
+                <strong>Tel</strong> : 02-718-3582-3 <br />
+                <strong>Fax</strong> : 02-718-3584
+              </p>
             </div>
             <div className="w-full xl:w-1/2">
               <h2 className="text-[24px] font-medium text-[#003190]">
