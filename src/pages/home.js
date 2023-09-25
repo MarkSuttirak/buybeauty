@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+
 import { Link } from 'react-router-dom';
 import kImaging from "../img/4kImaging.png";
 import kImagingHover from "../img/4kImagingHover.png";
@@ -29,6 +30,10 @@ import customer6 from "../img/customer6.png";
 import customer7 from "../img/customer7.png";
 import customer8 from "../img/customer8.png";
 import customer9 from "../img/customer9.png";
+
+
+
+ 
 
 const upperBox = [
   {
@@ -155,8 +160,16 @@ const Home = () => {
       ></div>
     ));
   };
+   // Define your desired page title
+   const pageTitle = 'Home ';
+
+   // Set the page title using useEffect
+   useEffect(() => {
+     document.title = pageTitle+' - ' +' meditimethailand';
+   }, []);
 
   return (
+    
     <>
       <main>
         <section className="h-[80vh] sm:h-[512px] xl:h-[55vh]">
