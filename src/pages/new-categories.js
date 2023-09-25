@@ -93,7 +93,7 @@ function NewCategories() {
           </h2>
           <div className="flex gap-3 xl:gap-6 flex-col sm:flex-row flex-wrap sm:pl-3 xl:pl-7 mt-[50px] xl:mt-[80px] mx-5">
             {category.map((item) => (
-              <div className="bg-[#E6F0EC] w-full sm:w-[31.33%] py-[50px] px-[36px] pb-[0px] rounded-[20px]">
+              <div className="bg-[#E6F0EC] w-full sm:w-[31.33%] py-[50px] px-[36px] pb-[0px] rounded-[20px] min-h-[450px]">
                 <h2 className="text-[#003190] text-[21px] xl:text-4xl font-semibold uppercase">
                   {item.name}
                 </h2>
