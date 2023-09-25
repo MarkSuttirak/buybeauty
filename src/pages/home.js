@@ -159,7 +159,7 @@ const Home = () => {
   return (
     <>
       <main>
-        <section className="h-[80vh] sm:h-[512px] xl:h-[280px]">
+        <section className="h-[80vh] sm:h-[512px] xl:h-[55vh]">
           <HomeSlider />
         </section>
         <section className=" bg-[#E5F0EB] px-6 xl:px-0">
