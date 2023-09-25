@@ -33,10 +33,10 @@ export default function Header() {
     <header className="bg-white xl:h-[120px] px-4">
       <nav className="flex max-w-[1290px] h-[120px] mx-auto items-center justify-between lg:px-0" aria-label="Global">
         <div className="flex lg:flex-1 h-full items-center">
-          <a href="#" className="-m-1.5 p-1.5">
+          <Link to="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <img className="w-[166px] xl:w-[269px] h-auto" src={MedtimeLogo} alt="" />
-          </a>
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -45,7 +45,7 @@ export default function Header() {
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+            <svg fill="#026B3F" width="20" height="20" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"><path class="clr-i-outline clr-i-outline-path-1" d="M32 29H4a1 1 0 0 1 0-2h28a1 1 0 0 1 0 2Z"/><path class="clr-i-outline clr-i-outline-path-2" d="M32 19H4a1 1 0 0 1 0-2h28a1 1 0 0 1 0 2Z"/><path class="clr-i-outline clr-i-outline-path-3" d="M32 9H4a1 1 0 0 1 0-2h28a1 1 0 0 1 0 2Z"/><path fill="none" d="M0 0h36v36H0z"/></svg>
           </button>
         </div>
         <Popover.Group className="hidden lg:flex h-full lg:gap-x-12">
